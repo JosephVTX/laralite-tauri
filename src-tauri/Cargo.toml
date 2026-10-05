@@ -1,0 +1,21 @@
+[package]
+name = "laralite"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+futures-util = "0.3.34"
+hex = "0.4.3"
+regex = "1.13.1"
+reqwest = { version = "0.13.5", features = ["json", "stream"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+sha2 = "0.11.0"
+tauri = { version = "2", features = [] }
+tokio = { version = "1.53.2", features = ["fs", "rt-multi-thread", "macros"] }
+windows-sys = { version = "0.61.2", features = ["Win32_UI_WindowsAndMessaging", "Win32_Foundation"] }
+winreg = "0.56.0"
+zip = "8.6.0"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
